@@ -30,7 +30,7 @@
 
             const ctx = canvas.getContext('2d');
             const dx = 0;
-            const dy = parseInt(len/2 - orgCanvas.height/2);
+            const dy = parseInt(len/2 - orgH/2);
             ctx.drawImage(orgCanvas, dx, dy, orgW, orgH);
 
             favicon.href = canvas.toDataURL('image/png');
