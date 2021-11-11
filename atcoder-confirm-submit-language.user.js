@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         atcoder-confirm-submit-language
 // @namespace    https://github.com/ilplrr
-// @version      1.1
+// @version      1.2
 // @description  提出前に提出言語の再確認を促します。
 // @author       ilplrr
 // @match        https://atcoder.jp/contests/*/tasks/*
@@ -59,4 +59,9 @@ setTimeout((function() {
         const lang = select.parentNode.querySelector('span').textContent;
         changeConfirmText(lang);
     }).observe(select.parentNode, {subtree:true, childList: true});
+
+    new MutationObserver((mutationList, observer) => {
+        cb.checked = false;
+        toggle();
+    }).observe(document.querySelector('#sourceCode'), {subtree:true, childList: true});
 }),0);
