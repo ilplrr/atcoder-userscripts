@@ -36,7 +36,7 @@ setTimeout((function() {
     div.appendChild(label);
 
     const MOUSE_OVER_NAME = `${SCRIPT_NAME}-mouseover`;
-    submitBtn.parentNode.childNodes.forEach((e)=>{
+    submitBtn.parentNode.childNodes.forEach((e) => {
         if (e === div) return;
         const checkbox = document.querySelector(`#${cb.id}`);
         e.addEventListener('mouseover', () => checkbox.checked || div.classList.add(MOUSE_OVER_NAME));
@@ -47,7 +47,7 @@ setTimeout((function() {
     document.body.appendChild(style);
 
     const toggle = () => {
-        submitBtn.parentNode.childNodes.forEach((e)=>{
+        submitBtn.parentNode.childNodes.forEach((e) => {
             if (e === div) return;
             e.disabled = !cb.checked;
         });
@@ -55,8 +55,8 @@ setTimeout((function() {
     toggle();
     div.addEventListener('change', toggle);
 
-    select.parentNode.onchange = (e)=>{
+    new MutationObserver((mutationList, observer) => {
         const lang = select.parentNode.querySelector('span').textContent;
         changeConfirmText(lang);
-    };
+    }).observe(select.parentNode, {subtree:true, childList: true});
 }),0);
