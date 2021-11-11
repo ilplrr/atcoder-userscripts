@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         atcoder-confirm-submit-language
 // @namespace    https://github.com/ilplrr
-// @version      1.0
+// @version      1.1
 // @description  提出前に提出言語の再確認を促します。
 // @author       ilplrr
 // @match        https://atcoder.jp/contests/*/tasks/*
