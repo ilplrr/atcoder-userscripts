@@ -11,12 +11,14 @@
 (function() {
     'use strict';
 
+    const vstInputTag = document.querySelector('#vst-tmp');
+    if (!vstInputTag) return;
+
     const div = document.createElement('div');
     div.style.textAlign = 'center';
     div.style.marginBottom = '15px';
     document.querySelector('#form-register').insertBefore(div, document.querySelectorAll('.form-group')[1]);
 
-    const vstInputTag = document.querySelector('#vst-tmp');
     const createBtn = (text, sec) => {
         const btn = document.createElement('input');
         btn.type = 'button';
