@@ -34,3 +34,7 @@
 - atcoder-typical90-insert-editorials-links.user.js
 
     典型90問の問題ページ上部に、解説リンクを追加する。
+
+- atcoder-virtual-quick-start.user.js
+
+    バーチャル参加ページの開始時刻入力を簡略化する。
