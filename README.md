@@ -38,3 +38,7 @@
 - atcoder-virtual-quick-vst.user.js
 
     バーチャル参加ページの開始時刻入力を簡略化する。
+
+- atcoder-virtual-remaining-time-display.user.js
+
+    バーチャルコンテストの残り時間を表示する。
