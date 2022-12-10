@@ -12,6 +12,8 @@
 (function() {
     'use strict';
 
+    if (getServerTime() < endTime) return;
+
     const createTimer = (data) => {
         if (!data.isVirtual) return;
         if (!(data.virtualStartTime && data.virtualEndTime)) return;
