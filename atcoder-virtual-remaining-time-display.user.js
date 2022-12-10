@@ -4,6 +4,7 @@
 // @version      1.0
 // @description  バーチャルコンテストの残り時間を表示します。
 // @author       ilplrr
+// @license      MIT
 // @match        https://atcoder.jp/contests/*
 // @grant        none
 // ==/UserScript==
