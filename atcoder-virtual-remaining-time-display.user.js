@@ -66,7 +66,6 @@
         doc.querySelectorAll('script').forEach((e) => {
             const s = e.innerHTML;
             const m = s.match(/(isVirtual|virtual(Start|End)Time)\s*=\s*[^\n]*/g);
-            console.log(m);
             if (m) {
                 m.forEach((s) => eval('data.' + s));
             }
