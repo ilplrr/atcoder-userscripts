@@ -1,11 +1,12 @@
 // ==UserScript==
 // @name         atcoder-change-editorial-atags-attributes
 // @namespace    https://github.com/ilplrr
-// @version      1.1
+// @version      1.2
 // @description  問題ページの「解説」を新しいタブで開くように設定します。また、解説ページのリンクを同じタブで開くよう設定します。
 // @author       ilplrr
 // @include      /^https:\/\/atcoder\.jp\/contests\/[^\/]+\/tasks\/[^\/]+$/
 // @include      /^https:\/\/atcoder\.jp\/contests\/[^\/]+\/tasks\/[^\/]+\/editorial$/
+// @include      /^https:\/\/atcoder\.jp\/contests\/[^\/]+\/editorial$/
 // @grant        none
 // ==/UserScript==
 
